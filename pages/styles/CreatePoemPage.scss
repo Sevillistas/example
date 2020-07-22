@@ -1,0 +1,65 @@
+$font_form : -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+
+$main_color: #ba68c8 ; //#f06292
+$main_color_shadow: #ba68c877;
+$main_color_pseudo: #ba68c8cc;
+
+.form{
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border: 1px solid $main_color;
+    border-radius: 10px;
+    width: 50vw;
+    box-shadow: 0px 4px 10px $main_color_shadow;
+    &__item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 7.5px;
+        >label{
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        >input{
+            height: 2rem;
+        }
+        >textarea{
+            resize: none;
+            height: 400px;
+        }
+        >input, >textarea{
+            padding: 5px 10px;
+            font-family: $font_form;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid $main_color_shadow;
+            &:focus, &:active, &:hover{
+                border: 2px solid $main_color_pseudo;
+            }
+        }
+    }
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    >button{
+        padding: 5px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.75px;
+        font-family: $font_form;
+        color: white;
+        background-color: $main_color;
+        border: 1px solid rgba($color: #000000, $alpha: 0);
+        border-radius: 7.5px;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            color: $main_color;
+            background-color: white;
+            border: 1px solid $main_color;
+        }
+    }
+}

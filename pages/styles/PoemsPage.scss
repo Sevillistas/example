@@ -1,0 +1,20 @@
+.poems-container{
+    display: flex;
+
+    >*:first-child{
+        flex: 3;
+    }
+    >*:last-child{
+        flex: 1;
+    }
+
+    &__left{
+        margin-left: 2.5vw;
+    }
+    &__right{
+        margin-right: 2.5vw;
+        margin-top: 15px;
+        /*background-color: #ba68c855;
+        border-left: 1px solid #ba68c8;*/
+    }
+}

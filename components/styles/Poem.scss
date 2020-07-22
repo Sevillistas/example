@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+body{
+    //background-image: url(https://i.pinimg.com/originals/dc/ef/f6/dceff6eb8639f46f68f25c36125bdbeb.jpg);
+    //background-image: url("https://ca-times.brightspotcdn.com/dims4/default/a6fb041/2147483647/strip/true/crop/6000x4000+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd4%2Fdf%2Fdfef62e24c3880a9aa24718880a7%2Fadobestock-216333609-2.jpeg");
+    //background-image: url(https://i.pinimg.com/originals/89/6e/2c/896e2c9c05a0e4f86542e3c9264a8373.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.poem{
+    width: fit-content;
+    &__text{
+        //font-family: 'Pacifico', cursive;
+        font-family: 'Marck Script', cursive;
+        font-size: 24px;
+        max-height: 600px;
+        overflow-y: scroll;
+    }
+}
+
+.genre-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 1px;
+}

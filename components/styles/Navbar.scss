@@ -1,0 +1,45 @@
+nav{
+    background-color: #f8bbd0; //#8d6e63
+    height: 60px;
+}
+
+.navbar{
+    &-container{
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+        height: 100%;
+    }
+    &-logo{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        &__text{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 22px;
+            margin-left: 15px;
+            text-transform: uppercase;
+        }
+        &__image{
+
+        }
+    }
+    &-link{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 1rem;
+        &:hover{
+            text-transform: uppercase;
+        }
+    }
+    &-links{
+        flex: 3;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
